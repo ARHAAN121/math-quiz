@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Math Quiz</title>
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="question-turn">
+            <h2>Player 1</h2>
+            <label for="num1">Enter Number 1:</label>
+            <input type="number" id="num1">
+            <label for="num2">Enter Number 2:</label>
+            <input type="number" id="num2">
+            <button onclick="askQuestion()">Ask Question</button>
+        </div>
+        <div id="answer-turn">
+            <h2>Player 2</h2>
+            <label for="answer">Enter the Answer:</label>
+            <input type="number" id="answer">
+            <button onclick="checkAnswer()">Check Answer</button>
+        </div>
+        <div id="result"></div>
+        <div id="score">
+            <p>Player 1 Score: <span id="player1-score">0</span></p>
+            <p>Player 2 Score: <span id="player2-score">0</span></p>
+        </div>
+        <button id="go-to-answer-page" onclick="goToAnswerPage()">Go to Answer Page</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
